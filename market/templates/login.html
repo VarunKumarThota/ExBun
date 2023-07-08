@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %}
+    Login Page
+{% endblock %}
+
+{% block content %}
+<body class="text-center">
+    <div class="container">
+        <form method="POST" class="form-signin" style="color:white">
+            {{ form.hidden_tag() }}
+            <img style="border-radius: 80%; width: 500px" class="mb-4" src="https://cdn.dribbble.com/users/3912043/screenshots/15496848/media/857ae8eb19695983253bc622a1326c6f.jpg?compress=1&resize=1000x750&vertical=center" alt="image">
+            <h1 class="display-1 font-weight-normal">ExBun</h1>
+            <h4 class="display-4 font-weight-normal">Your road to the future</h4>
+            <br>
+            <br>
+            <h1 class="h3 mb-3 font-weight-normal">
+                Please Login
+            </h1>
+            <br>
+            {{ form.username.label() }}
+            {{ form.username(class="form-control", placeholder="User Name") }}
+
+            {{ form.password.label() }}
+            {{ form.password(class="form-control", placeholder="Password") }}
+
+            <br>
+
+
+            <div class="checkbox mb-3">
+               <h6>Do not have an account?</h6>
+               <a class="btn btn-sm btn-secondary" href="{{ url_for('register_page') }}">Register</a>
+            </div>
+
+            {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
+
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+{% endblock %}

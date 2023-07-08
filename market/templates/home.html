@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}
+    Welcome to ExBun
+{% endblock %}
+{% block content %}
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center " style="color:white">
+        <img style="border-radius: 80%; width: 500px" class="mb-4" src="https://cdn.dribbble.com/users/3912043/screenshots/15496848/media/857ae8eb19695983253bc622a1326c6f.jpg?compress=1&resize=1000x750&vertical=center" alt="image">
+        <div class="col-md-7 p-lg-1 mx-auto my-1">
+            <h1  style="text-center" class="display-1 font-weight-normal">ExBun</h1>
+            <h4 class="display-4 font-weight-normal">Your road to the future</h4>
+            <br>
+            <br>
+            <p class="">ExBun is a Leading worldclass platform for providing serices and managing stocks.</p>
+            <p>Here in ExBun we provide world class service to our customers.Our focus to provide best insights and predictions for our customers.
+                We at ExBun strive towards building better future for our clients and people around us.</p>
+            <p>ExBun is a Demat and stock trading app that allows you to open a free Demat account
+                 and trade BSE, NSE listed stocks in the share market at a low brokerage on the stock orders. 
+                 It has enabled millions of Indians by providing them with an easier option for managing their finances. 
+                 ExBun helps users make their investment process easy, fast and transparent.</p>
+            <h4>Mission and Vision</h4>
+            <p>ExBun is on a mission to democratize access to financial services for millions of Indians responsibly.</p>
+             <p><h5>Customers First</h5>
+                Every decision we make is centered around our customer’s needs and convenience.</p>
+                
+                <h5>Simple is Beautiful</h5>
+                <p>Be it our app, website, or services - we strive to keep making things simpler.</p>
+                
+                <h5>Honesty & Integrity</h5>
+               <p> We want our customers to be completely aware of everything to do with their investments. 
+                Whatever we do is always crystal clear.</p>
+            
+            <a class="btn btn-primary" href="{{ url_for('market_page') }}">Get Started</a>
+        </div>
+        <div class="product-device box-shadow d-none d-md-block"></div>
+        <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+    </div>
+{% endblock %}
